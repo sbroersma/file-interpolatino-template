@@ -30,5 +30,5 @@ spec:
 
     - id: directory_contents
       name: Directory Contents
-      action: degug:log
+      action: debug:log
       run: ls
