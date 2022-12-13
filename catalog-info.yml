@@ -31,7 +31,7 @@ spec:
     - id: directory_contents
       name: Directory Contents
       action: debug:log
-        input:
+      input:
         message: "Hi Scott"
         listWorkspace: "true"
       
