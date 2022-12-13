@@ -19,13 +19,13 @@ spec:
           description: Unique Sonarqube project key
 
   steps:
-    #- id: create_file
-    #  name: Create Sonarqube project file
-    #  action: fetch:plain
-      #run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
-   #   input:
-    #    targetPath: ./
-    #    url: ./scott.txt
+    - id: create_file
+      name: Create Sonarqube project file
+      action: fetch:plain
+      run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
+      input:
+        targetPath: ./
+        url: ./scott.txt
       
 
     - id: directory_contents
