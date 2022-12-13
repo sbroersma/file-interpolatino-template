@@ -21,6 +21,10 @@ spec:
         repoUrl:
           title: Repo to upload to
           type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
         branchName:
           title: Branch name
           type: string
