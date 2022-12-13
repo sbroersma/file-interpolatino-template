@@ -31,4 +31,4 @@ spec:
     - id: directory_contents
       name: Directory Contents
       action: debug:log
-      run: ls
+      run: echo "Hi Scott"
