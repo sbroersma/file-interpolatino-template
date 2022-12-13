@@ -21,10 +21,14 @@ spec:
   steps:
     - id: create_file
       name: Create Sonarqube project file
-      description: Create Sonarqube project file
+      action: fetch:plain
       run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
+      input:
+        targetPath: ./
+        url: ./scott.txt
       
+
     - id: directory_contents
       name: Directory Contents
-      description: Print directory contents to verify file creation
-
+      action: degug:log
+      run: ls
