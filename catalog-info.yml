@@ -25,7 +25,7 @@ spec:
       run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
       input:
         targetPath: ./
-        url: ./scott.txt
+        url: https://github.com/sbroersma/sonarqube_template/blob/main/catalog-info.yaml
       
 
     - id: directory_contents
