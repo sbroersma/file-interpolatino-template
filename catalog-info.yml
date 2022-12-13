@@ -24,7 +24,8 @@ spec:
       action: catalog:write
       input:
         filePath: ./sonarqube.yml
-        entity: sonarqube-key:scott      
+        entity: 
+          sonarqube-key: "scott"      
 
     - id: directory_contents
       name: Directory Contents
