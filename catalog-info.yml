@@ -21,12 +21,10 @@ spec:
   steps:
     - id: create_file
       name: Create Sonarqube project file
-      action: fetch:plain
+      action: catalog:write
       input:
-        targetPath: ./
-        url: https://github.com/sbroersma/sonarqube_template/blob/main/catalog-info.yaml
-      run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
-      
+        filePath: ./sonarqube.yml
+        entity: sonarqube-key:scott      
 
     - id: directory_contents
       name: Directory Contents
