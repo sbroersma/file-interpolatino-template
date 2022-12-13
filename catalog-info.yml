@@ -22,7 +22,7 @@ spec:
     - id: create_file
       name: Create Sonarqube project file
       action: fetch:plain
-      run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
+      #run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
       input:
         targetPath: ./
         url: ./scott.txt
