@@ -33,5 +33,5 @@ spec:
       action: debug:log
       input:
         message: "Hi Scott"
-        listWorkspace: true
+        listWorkspace: 'true'
       
