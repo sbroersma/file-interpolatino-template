@@ -10,20 +10,21 @@ spec:
 
   parameters:
     - title: User input
-    required:
-      - sonarqube_key
-    properties:
-      sonarqube_key:
-        title: Sonarqube project key
-        type: string
-        description: Unique Sonarqube project key
+      required:
+        - sonarqube_key
+      properties:
+        sonarqube_key:
+          title: Sonarqube project key
+          type: string
+          description: Unique Sonarqube project key
 
-steps:
-  - id: create_file
-    name: Create Sonarqube project file
-    description: Create Sonarqube project file
-    run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
-  - id: directory_contents
-    name: Directory Contents
-    description: Print directory contents to verify file creation
+  steps:
+    - id: create_file
+      name: Create Sonarqube project file
+      description: Create Sonarqube project file
+      run: echo "sonar-project-key:" ${{ sonarqube_key }} > scott.txt
+      
+    - id: directory_contents
+      name: Directory Contents
+      description: Print directory contents to verify file creation
 
