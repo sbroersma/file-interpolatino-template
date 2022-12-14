@@ -38,7 +38,7 @@ spec:
       name: Create Sonarqube project file
       action: catalog:write
       input:
-        filePath: ./sonar-project.properties.yml
+        filePath: ./sonar-project.properties
         entity: 
           sonarqube.projectKey:${{ parameters.sonarqube_key }}   
 
