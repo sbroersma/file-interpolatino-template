@@ -38,9 +38,9 @@ spec:
       name: Create Sonarqube project file
       action: catalog:write
       input:
-        filePath: ./sonarqube.yml
+        filePath: ./sonar-project.properties.yml
         entity: 
-          sonarqube.projectKey: ${{ sonarqube_key }}     
+          sonarqube-projectKey: "sonar_key"#${{ sonarqube_key }}     
 
     - id: publish
       name: Publish
