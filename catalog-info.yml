@@ -40,7 +40,7 @@ spec:
       input:
         filePath: ./sonar-project.properties
         entity: 
-          sonarqube.projectKey: ${{ parameters.sonarqube_key }}   
+          sonar.projectKey: ${{ parameters.sonarqube_key }}   
 
     - id: publish
       name: Publish
