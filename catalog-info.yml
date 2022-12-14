@@ -40,7 +40,7 @@ spec:
       input:
         filePath: ./sonarqube.yml
         entity: 
-          sonarqube-key: "scott"      
+          sonarqube.projectKey: ${{ sonarqube_key }}     
 
     - id: publish
       name: Publish
